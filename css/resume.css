@@ -114,9 +114,15 @@
  }
 
  @media screen and (min-width: 768px) {
-    .swiper-scrollbar-all {
-        display: none;
-    }
+     .swiper-scrollbar-all {
+         display: none;
+     }
+     .swiper-pagination-all {
+         display: block;
+     }
+     .swiper-pagination {
+         margin-right: 20px;
+     }
      .swiper-pagination {
          margin-right: 20px;
      }
@@ -126,6 +132,12 @@
  }
 
  @media screen and (max-width: 768px) {
+     .swiper-scrollbar-all {
+         display: block;
+     }
+     .swiper-pagination-all {
+         display: none;
+     }
      #user {
          top: 8px;
          left: 15px;
@@ -299,8 +311,8 @@
  }
 
  @media all and (max-width: 768px) {
-     .swiper-pagination-all  {
-        display: none;
+     .swiper-pagination-all {
+         display: none;
      }
      .slide-title {
          line-height: 56px;
