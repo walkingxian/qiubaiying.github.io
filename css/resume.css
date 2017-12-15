@@ -550,7 +550,7 @@
  }
 
  @media all and (max-width: 768px) {
-     .skill-container {
+     .slide-content>.skill-container {
          transform: scale(0.8);
      }
  }
@@ -641,6 +641,7 @@
  @media all and (max-width: 768px) {
      .swiper-slide.experience .slide-content {
          margin: 0;
+         margin-bottom: -30px;
      }
      .swiper-container-exp-head {
          margin: 50px 0;
@@ -657,6 +658,10 @@
      .swiper-container-exp-works li {
          padding: 0 10%;
          font-size: 14px !important;
+     }
+
+     #exp-bg {
+         display: none;
      }
  }
 
