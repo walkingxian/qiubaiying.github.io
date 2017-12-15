@@ -31,13 +31,12 @@
 
  #user {
      position: fixed;
-     top: 20px;
-     left: 20px;
+     top: 10px;
+     left: 125px;
      width: 40px;
      height: 40px;
      background-image: url("../img/user.jpg");
  }
-
 
  #arrow {
      display: inline-block;
@@ -110,7 +109,7 @@
      background-color: #a29971;
  }
 
- @media screen and (min-width: 600px) {
+ @media screen and (min-width: 768px) {
      .swiper-pagination {
          margin-right: 20px;
      }
@@ -122,11 +121,11 @@
      }
  }
 
- @media screen and (max-width: 600px) {
-      #user {
-          top: 8px;
-          left: 15px;
-      }
+ @media screen and (max-width: 768px) {
+     #user {
+         top: 8px;
+         left: 15px;
+     }
      .swiper-pagination {
          margin-right: 10px;
      }
@@ -285,7 +284,7 @@
  }
 
  .slide-title {
-     line-height: 120px;
+     line-height: 60px;
      font-size: 24px;
  }
 
@@ -298,7 +297,7 @@
      margin: 0 10%;
  }
 
- @media all and (max-width: 600px) {
+ @media all and (max-width: 768px) {
      .slide-title {
          line-height: 56px;
          font-size: 20px;
@@ -308,8 +307,8 @@
          bottom: 30px;
          justify-content: start;
      }
-    .navbar-header .navbar-brand {
-        display: none;
+     .navbar-header .navbar-brand {
+         display: none;
      }
  }
  /* home */
@@ -364,7 +363,7 @@
      height: 100px;
  }
 
- @media all and (max-width: 600px) {
+ @media all and (max-width: 768px) {
      .info-item p {
          font-size: 12px;
          margin: 0;
@@ -550,6 +549,12 @@
      background-color: rgba(207, 184, 178, 0.8);
  }
 
+ @media all and (max-width: 768px) {
+     .skill-container {
+         transform: scale(0.8);
+     }
+ }
+
  @keyframes circleRotate {
      0% {
          transform: rotate(0deg);
@@ -633,7 +638,7 @@
      margin-top: 10px;
  }
 
- @media all and (max-width: 600px) {
+ @media all and (max-width: 768px) {
      .swiper-slide.experience .slide-content {
          margin: 0;
      }
