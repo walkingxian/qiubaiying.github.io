@@ -109,12 +109,19 @@
      background-color: #a29971;
  }
 
+ .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+     margin: 10px 0;
+ }
+
  @media screen and (min-width: 768px) {
+      .swiper-scrollbar-all {
+         display: none;
+     } 
+     .swiper-pagination-all {
+         display: block;
+     }
      .swiper-pagination {
          margin-right: 20px;
-     }
-     .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-         margin: 10px 0;
      }
      .slide-content p {
          font-size: 20px;
@@ -122,15 +129,18 @@
  }
 
  @media screen and (max-width: 768px) {
+      .swiper-scrollbar-all {
+         display: block;
+     }
+     .swiper-pagination-all {
+         display: none; 
+     }
      #user {
          top: 8px;
          left: 15px;
      }
      .swiper-pagination {
          margin-right: 10px;
-     }
-     .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-         margin: 10px 0;
      }
      .swiper-slide {
          font-size: 16px;
