@@ -136,7 +136,7 @@
          display: block;
      }
      .swiper-pagination-all {
-         display: none;
+         display: none; 
      }
      #user {
          top: 8px;
