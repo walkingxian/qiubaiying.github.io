@@ -144,6 +144,7 @@
      border: 10px solid transparent;
      background-clip: padding-box;
      opacity: 0.6;
+     box-sizing: content-box;
  }
 
  .swiper-pagination-all .swiper-pagination-bullet:before {
@@ -573,7 +574,7 @@
  }
 
  .swiper-container-exp-head {
-     margin: 30px 20%;
+     margin: 40px 20%;
      color: blanchedalmond;
  }
 
