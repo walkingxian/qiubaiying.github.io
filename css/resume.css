@@ -35,7 +35,7 @@
      left: 20px;
      width: 40px;
      height: 40px;
-     background-image: url("/img/user.jpg");
+     background-image: url("../img/user.jpg");
  }
 
  #arrow {
@@ -81,7 +81,7 @@
  .swiper-slide {
      text-align: center;
      font-size: 22px;
-     background: url("/img/bg.png");
+     background: url("../img/bg.png");
      color: white;
  }
 
@@ -181,27 +181,27 @@
  }
 
  .swiper-pagination-all .swiper-pagination-bullet:nth-child(1):before {
-     background-image: url("/img/pagination/p_home.svg");
+     background-image: url("../img/pagination/p_home.svg");
  }
 
  .swiper-pagination-all .swiper-pagination-bullet:nth-child(2):before {
-     background-image: url("/img/pagination/p_about.svg");
+     background-image: url("../img/pagination/p_about.svg");
  }
 
  .swiper-pagination-all .swiper-pagination-bullet:nth-child(3):before {
-     background-image: url("/img/pagination/p_skill.svg");
+     background-image: url("../img/pagination/p_skill.svg");
  }
 
  .swiper-pagination-all .swiper-pagination-bullet:nth-child(4):before {
-     background-image: url("/img/pagination/p_exp.svg");
+     background-image: url("../img/pagination/p_exp.svg");
  }
 
  .swiper-pagination-all .swiper-pagination-bullet:nth-child(5):before {
-     background-image: url("/img/pagination/p_works.svg");
+     background-image: url("../img/pagination/p_works.svg");
  }
 
  .swiper-pagination-all .swiper-pagination-bullet:nth-child(6):before {
-     background-image: url("/img/pagination/p_contact.svg");
+     background-image: url("../img/pagination/p_contact.svg");
  }
 
  .swiper-pagination-all .swiper-pagination-bullet:nth-child(1):after {
