@@ -116,7 +116,7 @@
  @media screen and (min-width: 768px) {
      .swiper-scrollbar-all {
          display: none;
-     }
+     } 
      .swiper-pagination-all {
          display: block;
      }
@@ -129,7 +129,7 @@
      .slide-content p {
          font-size: 20px;
      }
- }
+ } 
 
  @media screen and (max-width: 768px) {
      .swiper-scrollbar-all {
