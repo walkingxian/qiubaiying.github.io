@@ -38,6 +38,7 @@
      background-image: url("../img/user.jpg");
  }
 
+
  #arrow {
      display: inline-block;
      width: 32px;
@@ -122,6 +123,10 @@
  }
 
  @media screen and (max-width: 600px) {
+      #user {
+          top: 8px;
+          left: 15px;
+      }
      .swiper-pagination {
          margin-right: 10px;
      }
@@ -136,6 +141,8 @@
      }
      .slide-content p {
          font-size: 16px;
+         margin-top: 10px;
+         margin-bottom: 0;
      }
  }
 
@@ -289,6 +296,21 @@
      left: 0;
      right: 0;
      margin: 0 10%;
+ }
+
+ @media all and (max-width：600px) {
+     .slide-title {
+         line-height: 56px;
+         font-size: 20px;
+     }
+     .slide-content {
+         top: 56px;
+         bottom: 30px;
+         justify-content: start;
+     }
+    .navbar-header .navbar-brand {
+        display: none;
+     }
  }
  /* home */
 
@@ -452,25 +474,25 @@
  }
 
  .skill-outer-item:nth-child(2) {
-     left: 212px;
+     left: 206px;
      top: 44px;
      background-color: rgba(49, 65, 82, 0.8);
  }
 
  .skill-outer-item:nth-child(3) {
-     left: 212px;
+     left: 204px;
      top: 156px;
      background-color: rgba(76, 157, 160, 0.8);
  }
 
  .skill-outer-item:nth-child(4) {
      left: 100px;
-     top: 225px;
+     top: 219px;
      background-color: rgba(66, 66, 66, 0.8);
  }
 
  .skill-outer-item:nth-child(5) {
-     left: -12px;
+     left: -10px;
      top: 156px;
      background-color: rgba(193, 131, 106, 0.8);
  }
@@ -506,7 +528,7 @@
  }
 
  .skill-inner-item:nth-child(1) {
-     left: 40px;
+     left: 33px;
      top: -25px;
      background-color: rgba(179, 164, 140, 0.8);
  }
@@ -518,13 +540,13 @@
  }
 
  .skill-inner-item:nth-child(3) {
-     left: 40px;
-     top: 95px;
+     left: 33px;
+     top: 90px;
      background-color: rgba(238, 215, 163, 0.8);
  }
 
  .skill-inner-item:nth-child(4) {
-     left: 95px;
+     left: 89px;
      top: 40px;
      background-color: rgba(207, 184, 178, 0.8);
  }
