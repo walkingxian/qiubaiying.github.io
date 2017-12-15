@@ -235,13 +235,14 @@
      content: "联系我";
  }
 
- .swiper-pagination-all .swiper-pagination-bullet:hover:before {
-     animation: zoomUp .5s ease-in-out;
-     animation-fill-mode: forwards;
- }
-
- .swiper-pagination-all .swiper-pagination-bullet:hover:after {
-     visibility: visible;
+ @media all and (min-width: 768px) {
+     .swiper-pagination-all .swiper-pagination-bullet:hover:before {
+         animation: zoomUp .5s ease-in-out;
+         animation-fill-mode: forwards;
+     }
+     .swiper-pagination-all .swiper-pagination-bullet:hover:after {
+         visibility: visible;
+     }
  }
 
  .swiper-pagination-all .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -401,15 +402,16 @@
      border-radius: 50%;
  }
 
- .info-item div:hover {
-     opacity: 0.8;
-     transform: scale(.8);
- }
-
- .info-item div:hover:after {
-     -webkit-animation: effect 1.3s ease-out 75ms;
-     animation: effect 1.3s ease-out 75ms;
-     animation-fill-mode: forwards;
+ @media all and (min-width: 768px) {
+     .info-item div:hover {
+         opacity: 0.8;
+         transform: scale(.8);
+     }
+     .info-item div:hover:after {
+         -webkit-animation: effect 1.3s ease-out 75ms;
+         animation: effect 1.3s ease-out 75ms;
+         animation-fill-mode: forwards;
+     }
  }
 
  .swiper-slide.about .slide-content>p:first-of-type {
@@ -659,7 +661,6 @@
          padding: 0 10%;
          font-size: 14px !important;
      }
-
      #exp-bg {
          display: none;
      }
