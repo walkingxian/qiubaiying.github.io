@@ -138,7 +138,33 @@
         </div>
         <div class="swiper-slide works">
             <div class="slide-title">作品集</div>
-            <div class="slide-content"></div>
+            <div class="slide-content">
+                <div class="swiper-container swiper-container-works">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="swiper-container-works-lists">
+                                <li>负责快速构建高质量PC页面</li>
+                                <li>根据业务需求设计合适的工程项目</li>
+                                <li>基于sea.js模块化开发，按需加载</li>
+                                <li>利用echarts进行数据可视化开发</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="swiper-container-works-lists">
+                                <li>通过bootstrap-table.js进行数据表格展示</li>
+                                <li>负责各电商店铺宝贝管理</li>
+                                <li>担任平台客服</li>
+                                <li>完善淘宝店铺页面设计</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-works"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-next-works"></div>
+                    <div class="swiper-button-prev swiper-button-prev-works"></div>
+                </div>
+            </div>
         </div>
         <div class="swiper-slide contact">Slide 6</div>
     </div>
@@ -164,6 +190,9 @@
                 el: '.swiper-pagination-all',
                 clickable: true,
             },
+            scrollbar: {
+                el: '.swiper-scrollbar-all'
+            },
             on: {
                 slideChange: function () {
                     if (this.activeIndex === 3) {
@@ -174,9 +203,6 @@
                         animationDom.exp.img2.classList.remove("exp-img-ani");
                     }
                 }
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar-all'
             }
         });
 
@@ -187,9 +213,20 @@
                 clickable: true,
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+                nextEl: '.swiper-button-next-exp',
+                prevEl: '.swiper-button-prev-exp',
+            }
+        });
 
+        var swiper = new Swiper('.swiper-container-works', {
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination-works',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-works',
+                prevEl: '.swiper-button-prev-works',
+            },
         });
     </script>
