@@ -130,11 +130,6 @@
      .swiper-pagination {
          margin-right: 10px;
      }
-     .swiper-pagination-bullet,
-     .swiper-pagination-bullet:before,
-     .swiper-pagination-bullet:after {
-         -webkit-tap-highlight-color: transparent;
-     }
      .swiper-slide {
          font-size: 16px;
      }
@@ -301,6 +296,9 @@
  }
 
  @media all and (max-width: 768px) {
+     .swiper-pagination-all  {
+        display: none;
+     }
      .slide-title {
          line-height: 56px;
          font-size: 20px;
