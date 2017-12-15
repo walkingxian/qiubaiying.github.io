@@ -109,12 +109,13 @@
      background-color: #a29971;
  }
 
+ .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+     margin: 10px 0;
+ }
+
  @media screen and (min-width: 768px) {
      .swiper-pagination {
          margin-right: 20px;
-     }
-     .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-         margin: 10px 0;
      }
      .slide-content p {
          font-size: 20px;
@@ -129,8 +130,10 @@
      .swiper-pagination {
          margin-right: 10px;
      }
-     .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-         margin: 10px 0;
+     .swiper-pagination-bullet,
+     .swiper-pagination-bullet:before,
+     .swiper-pagination-bullet:after {
+         -webkit-tap-highlight-color: transparent;
      }
      .swiper-slide {
          font-size: 16px;
@@ -235,14 +238,13 @@
      content: "联系我";
  }
 
- @media all and (min-width: 768px) {
-     .swiper-pagination-all .swiper-pagination-bullet:hover:before {
-         animation: zoomUp .5s ease-in-out;
-         animation-fill-mode: forwards;
-     }
-     .swiper-pagination-all .swiper-pagination-bullet:hover:after {
-         visibility: visible;
-     }
+ .swiper-pagination-all .swiper-pagination-bullet:hover:before {
+     animation: zoomUp .5s ease-in-out;
+     animation-fill-mode: forwards;
+ }
+
+ .swiper-pagination-all .swiper-pagination-bullet:hover:after {
+     visibility: visible;
  }
 
  .swiper-pagination-all .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -402,16 +404,15 @@
      border-radius: 50%;
  }
 
- @media all and (min-width: 768px) {
-     .info-item div:hover {
-         opacity: 0.8;
-         transform: scale(.8);
-     }
-     .info-item div:hover:after {
-         -webkit-animation: effect 1.3s ease-out 75ms;
-         animation: effect 1.3s ease-out 75ms;
-         animation-fill-mode: forwards;
-     }
+ .info-item div:hover {
+     opacity: 0.8;
+     transform: scale(.8);
+ }
+
+ .info-item div:hover:after {
+     -webkit-animation: effect 1.3s ease-out 75ms;
+     animation: effect 1.3s ease-out 75ms;
+     animation-fill-mode: forwards;
  }
 
  .swiper-slide.about .slide-content>p:first-of-type {

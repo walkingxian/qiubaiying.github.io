@@ -1,7 +1,4 @@
----
-layout: nav
-title: "Resume"
----
+--- layout: nav title: "Resume" ---
 
 <div id="arrow"></div>
 <a id="user" class="round-img" href="https://github.com/walkingxian" target="_blank"></a>
@@ -154,6 +151,9 @@ title: "Resume"
 
     <!-- Initialize Swiper -->
     <script>
+        document.querySelectorAll(".swiper-pagination-bullet").addEventListener('touchstart', function () {
+            
+        });
         var animationDom = {
             exp: {
                 img1: document.getElementById("exp-bg").children[0],
