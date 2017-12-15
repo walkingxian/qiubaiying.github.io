@@ -151,8 +151,8 @@
 
     <!-- Initialize Swiper -->
     <script>
-        document.querySelectorAll(".swiper-pagination-bullet").addEventListener('touchstart', function () {
-            
+        document.querySelectorAll(".swiper-pagination-bullet").addEventListener('touchstart', function (e) {
+            e.preventDefault();
         });
         var animationDom = {
             exp: {
